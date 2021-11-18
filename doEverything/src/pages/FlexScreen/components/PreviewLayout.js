@@ -1,39 +1,7 @@
-import React, {useState} from 'react';
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React from 'react';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export default function FlexScreen() {
-  return (
-    <ScrollView style={styles.pageWrapper}>
-      <View style={styles.pageSection}>
-        <FlexDirectionBasics />
-      </View>
-    </ScrollView>
-  );
-}
-
-const FlexDirectionBasics = () => {
-  const [flexDirection, setflexDirection] = useState('column');
-
-  return (
-    <PreviewLayout
-      label="flexDirection"
-      values={['column', 'row', 'row-reverse', 'column-reverse']}
-      selectedValue={flexDirection}
-      setSelectedValue={setflexDirection}>
-      <View style={[styles.box, {backgroundColor: 'powderblue'}]} />
-      <View style={[styles.box, {backgroundColor: 'skyblue'}]} />
-      <View style={[styles.box, {backgroundColor: 'steelblue'}]} />
-    </PreviewLayout>
-  );
-};
-
-const PreviewLayout = ({
+export const PreviewLayout = ({
   label,
   children,
   values,
@@ -63,22 +31,10 @@ const PreviewLayout = ({
 );
 
 const styles = StyleSheet.create({
-  pageWrapper: {
-    width: '100%',
-    height: '100%',
-  },
-  pageSection: {
-    width: '100%',
-    height: 500,
-  },
   container: {
     flex: 1,
     marginTop: 8,
     backgroundColor: 'aliceblue',
-  },
-  box: {
-    width: 50,
-    height: 50,
   },
   row: {
     flexDirection: 'row',
