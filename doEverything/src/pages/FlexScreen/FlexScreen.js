@@ -1,25 +1,23 @@
 import React from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet} from 'react-native';
+import {AlignItemsLayout} from './components/AlignItemsLayout';
 import {FlexDirectionBasics} from './components/FlexDirectionBasics';
 import {JustifyContentBasics} from './components/JustifyContentBasics';
 
 export default function FlexScreen() {
   return (
-    <ScrollView style={styles.pageWrapper}>
-      <View style={styles.pageSection}>
-        <FlexDirectionBasics />
-        <JustifyContentBasics />
-      </View>
+    <ScrollView
+      contentContainerStyle={{flexGrow: 1, flex: 1}}
+      style={styles.container}>
+      <FlexDirectionBasics />
+      <JustifyContentBasics />
+      <AlignItemsLayout />
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  pageWrapper: {
+  container: {
     width: '100%',
-  },
-  pageSection: {
-    width: '100%',
-    height: '100%',
   },
 });
