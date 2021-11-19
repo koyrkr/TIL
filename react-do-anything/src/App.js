@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Feed from "./pages/Feed/Feed";
+import Feed from "@pages/Feed/Feed";
 
 function App() {
   return (
