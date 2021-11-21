@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import * as S from "./Style";
+import TopBar from "@components/TopBar/TopBar";
 
 function Feed() {
   return (
-    <>
-      <div>Welcome to the homepage!</div>
-      <nav>
+    <S.Wrapper>
+      <TopBar />
+      {/* <div>
         <Link to="/about">ABOUT</Link>
-      </nav>
-    </>
+      </div> */}
+    </S.Wrapper>
   );
 }
 
