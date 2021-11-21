@@ -12,27 +12,27 @@ const TopBar = () => {
     setSideBarVisible(!sideBarVisible);
   };
   return (
-    <S.TopBarWrapper>
-      <IconContext.Provider value={{ color: "#fff" }}>
+    <IconContext.Provider value={{ color: "#fff" }}>
+      <S.TopBarWrapper>
         <Link to="#">
           <FaIcons.FaBars onClick={handleShowSideBar} />
         </Link>
-        {sideBarVisible && (
-          <S.SideBarWrapper>
-            {SideBarData.map((item, index) => {
-              return (
-                <S.SideBarMenuWrapper key={index}>
-                  <S.SideBarMenuLink to={item.path}>
-                    {item.icon}
-                    <S.SideBarMenuText>{item.title}</S.SideBarMenuText>
-                  </S.SideBarMenuLink>
-                </S.SideBarMenuWrapper>
-              );
-            })}
-          </S.SideBarWrapper>
-        )}
-      </IconContext.Provider>
-    </S.TopBarWrapper>
+      </S.TopBarWrapper>
+      {sideBarVisible && (
+        <S.SideBarWrapper>
+          {SideBarData.map((item, index) => {
+            return (
+              <S.SideBarMenuWrapper key={index}>
+                <S.SideBarMenuLink to={item.path}>
+                  {item.icon}
+                  <S.SideBarMenuText>{item.title}</S.SideBarMenuText>
+                </S.SideBarMenuLink>
+              </S.SideBarMenuWrapper>
+            );
+          })}
+        </S.SideBarWrapper>
+      )}
+    </IconContext.Provider>
   );
 };
 

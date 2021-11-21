@@ -11,6 +11,7 @@ export const TopBarWrapper = styled.div`
   display: grid;
   grid-template-columns: 50px auto;
   align-items: center;
+  padding-left: 8px;
 `;
 
 export const SideBarWrapper = styled.div`
@@ -34,9 +35,11 @@ export const SideBarMenuWrapper = styled.div`
 export const SideBarMenuLink = styled(Link)`
   display: flex;
   flex-direction: row;
+  text-decoration: none;
+  align-items: center;
 `;
 
 export const SideBarMenuText = styled(fonts.BD.MD[14])`
   color: #fff;
-  margin-left: 8px;
+  margin-left: 12px;
 `;
