@@ -8,6 +8,8 @@ import * as BsIcons from "react-icons/bs";
 const TopBar = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
 
+  //TODO(Gina) : 디자인 style 좀 더 손보기
+  //TODO(Gina) : 페이지 구성 생각하기
   const handleShowSideBar = () => {
     setSideBarVisible(!sideBarVisible);
   };
