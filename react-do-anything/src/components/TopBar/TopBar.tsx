@@ -1,15 +1,17 @@
 import { useState } from "react";
-import * as S from "./Style";
-import * as FaIcons from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import * as BsIcons from "react-icons/bs";
+import * as FaIcons from "react-icons/fa";
+import { Link } from "react-router-dom";
+import * as S from "./Style";
 
 const TopBar = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
 
   //TODO(Gina) : 디자인 style 좀 더 손보기
   //TODO(Gina) : 페이지 구성 생각하기
+  //TODO(Gina) : MySQL, API Structure 고민
+
   const handleShowSideBar = () => {
     setSideBarVisible(!sideBarVisible);
   };
