@@ -11,6 +11,7 @@ const TopBar = () => {
   //TODO(Gina) : 디자인 style 좀 더 손보기
   //TODO(Gina) : 페이지 구성 생각하기
   //TODO(Gina) : MySQL, API Structure 고민
+  //TODO(Gina) : 디자인 메인 폰트, 색상 고민하기
 
   const handleShowSideBar = () => {
     setSideBarVisible(!sideBarVisible);
