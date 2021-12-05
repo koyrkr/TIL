@@ -56,7 +56,7 @@ export const SideBarData = [
     icon: <BsIcons.BsFillInfoCircleFill />,
   },
   {
-    title: "Contact Us",
+    title: "Contact Me",
     path: "/Contact",
     icon: <BsIcons.BsEnvelopeFill />,
   },

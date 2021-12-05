@@ -2,7 +2,7 @@
 import * as S from "./Style";
 import TopBar from "@components/TopBar/TopBar";
 
-function Feed() {
+function Home() {
   return (
     <S.Wrapper>
       <TopBar />
@@ -13,4 +13,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default Home;

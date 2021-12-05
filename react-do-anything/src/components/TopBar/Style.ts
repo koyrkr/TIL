@@ -3,7 +3,7 @@ import fonts from "@constants/fonts";
 import { Link } from "react-router-dom";
 import colors from "@constants/colors";
 
-const TOP_BAR_HEIGHT = 80;
+const TOP_BAR_HEIGHT = 60;
 const SIDE_BAR_WIDTH = 150;
 
 export const TopBarWrapper = styled.div`
