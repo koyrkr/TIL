@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import fonts from "@constants/fonts";
 import { Link } from "react-router-dom";
+import colors from "@constants/colors";
 
 const TOP_BAR_HEIGHT = 80;
 const SIDE_BAR_WIDTH = 150;
 
 export const TopBarWrapper = styled.div`
-  background: #060b26;
+  background: ${colors.blue};
   height: ${TOP_BAR_HEIGHT}px;
   display: grid;
   grid-template-columns: 50px auto;
@@ -15,7 +16,7 @@ export const TopBarWrapper = styled.div`
 `;
 
 export const SideBarWrapper = styled.div`
-  background: #060b26;
+  background: ${colors.blue};
   position: absolute;
   top: ${TOP_BAR_HEIGHT}px;
   width: ${SIDE_BAR_WIDTH}px;
