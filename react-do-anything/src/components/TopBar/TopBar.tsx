@@ -9,8 +9,6 @@ import colors from "@constants/colors";
 const TopBar = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
 
-  //TODO(Gina) : 디자인 style 좀 더 손보기
-  //TODO(Gina) : 페이지 구성 생각하기
   //TODO(Gina) : MySQL, API Structure 고민
   //TODO(Gina) : 디비 구조도 고민해볼 것
 
@@ -44,6 +42,9 @@ const TopBar = () => {
 
 export default TopBar;
 
+// TODO(Gina): 영화, 애니메이션 소감
+// TODO(Gina): 현재 하는 공부 내용 정리
+
 export const SideBarData = [
   {
     title: "Home",
@@ -52,12 +53,22 @@ export const SideBarData = [
   },
   {
     title: "About",
-    path: "/About",
+    path: "/about",
     icon: <BsIcons.BsFillInfoCircleFill />,
   },
   {
+    title: "Movie Review",
+    path: "/movie-review",
+    icon: <BsIcons.BsFilm />,
+  },
+  {
+    title: "Study",
+    path: "/study",
+    icon: <BsIcons.BsFillBookFill />,
+  },
+  {
     title: "Contact Me",
-    path: "/Contact",
+    path: "/contact-me",
     icon: <BsIcons.BsEnvelopeFill />,
   },
 ];
