@@ -42,9 +42,6 @@ const TopBar = () => {
 
 export default TopBar;
 
-// TODO(Gina): 영화, 애니메이션 소감
-// TODO(Gina): 현재 하는 공부 내용 정리
-
 export const SideBarData = [
   {
     title: "Home",
