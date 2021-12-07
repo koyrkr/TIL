@@ -11,6 +11,7 @@ const TopBar = () => {
 
   //TODO(Gina) : MySQL, API Structure 고민
   //TODO(Gina) : 디비 구조도 고민해볼 것
+  //TODO(Gina) : nest js로 서버 구조 짜기
 
   const handleShowSideBar = () => {
     setSideBarVisible(!sideBarVisible);
